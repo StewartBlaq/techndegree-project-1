@@ -16,10 +16,10 @@ main {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: white;
 }
 a:hover {
-  color: #6633ff;
+  color: grey;
 }
 
 
@@ -46,10 +46,32 @@ a:hover {
   padding: 0;
 }
 .top-left-nav{
-display: flex;
-align-items: center;
-justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+.github{
+  width: 32px;
+  height: 32px;
+  margin: 10px;
+  background-image: url("images/github.png");
+}
+.linkedin{
+  width: 32px;
+  height: 32px;
+  margin: 10px;
+  background-image: url("images/linkedin.png");
+}
+.github:hover{
+  background-image: url("images/github_hover.png");
+  transition: 1s;
+}
+.linkedin:hover{
+  background-image: url("images/linkedin_hover.png");
+  transition: 1s;
+}
+
+
 .top-right-nav{
 
 }
@@ -71,7 +93,7 @@ justify-content: space-between;
   margin: auto;
 }
 .nav a:hover {
-  color: white
+  color: #72e3ff;
 }
 
 h1{

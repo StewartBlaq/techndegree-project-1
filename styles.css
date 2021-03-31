@@ -247,9 +247,10 @@ footer ul li {
   .flex {
       max-width: 1200px;
       margin: 50px auto;
-      background-image: url("images/portrait.png");
+      background-image: url("images/portrait.jpg");
       background-repeat: no-repeat;
       background-position: center;
+
       min-height: 1200px;
   }
 
@@ -258,7 +259,8 @@ footer ul li {
     min-height: 700px;
     background-color: white;
     background-repeat: no-repeat;
-    background-image: url("images/hero.png");
+    background-image: url("images/hero.jpg");
+    background-size: cover;
     background-position: 50% 65%;
   }
   .nav {
@@ -278,7 +280,7 @@ footer ul li {
   footer {
     font-size: 1.3em;
     max-width: 1200px;
-    margin: 40px auto;
+
   }
 
 }

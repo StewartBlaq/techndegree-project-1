@@ -7,10 +7,25 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+  <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("scroll-nav").style.top = "0";
+    } else {
+      document.getElementById("scroll-nav").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
+
+</head>
   <body>
 
-    <div class="main-nav">
+    <div id="scroll-nav" class="main-nav">
         <div class="nav">
 
           <div class="top-left-nav">
@@ -33,16 +48,17 @@
     </div>
 
     <header>
-      <div class="home">
-
+      <div class="hero">
+        <h1>Stewart Blaquiere</h1>
+        <h2>Web Developer</h2>
       </div>
-
-
-
     </header>
 
+
+
+
     <main class="flex">
-      <div class="card">
+      <div class="card background">
         <h3>Background</h3>
         <p>I’m an aspiring web designer who loves creating. My career path has been quite adventurous. I fixed USAF special op planes and climbed the 400ft Orlando Eye.
         I've picked up many skills along the way that I believe can be quite conducive to building functional websites.</p>
@@ -50,11 +66,8 @@
 
       </div>
 
-      <div class="card">
-        <img width="100%" src="images/portrait.jpg">
-      </div>
 
-      <div class="card">
+      <div class="card goals">
         <h3>Goals</h3>
         <p>I want learn, grow, and perfect my web development skills. I have ~25 credit hours that have purely been in programming language based classes, including: <strong>HTML, CSS, JavaScript, Java, C</strong></p>
         <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>

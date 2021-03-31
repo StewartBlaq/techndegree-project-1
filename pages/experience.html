@@ -8,54 +8,84 @@
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("scroll-nav").style.top = "0";
+  } else {
+    document.getElementById("scroll-nav").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
 </head>
 
 <body>
-  <div class="main-nav">
-      <div class="nav">
 
-        <span class="top-left-nav">
-          <a href="https://www.linkedin.com/in/stewart-blaquiere/"><img src="../images/linkedin.png" class="social"></a>
-          <a href="https://github.com/StewartBlaq" ><img src="../images/github.png" class="social" ></a>
-        </span>
+      <div id="scroll-nav" class="main-nav">
+          <div class="nav">
 
-        <span class="mid-nav">
-          <a href="../index.html"><img src="../images/me.png" alt="S2 Logo" class="profile-image"></a>
-        </span>
+            <div class="top-left-nav">
+              <div class="linkedin"><a href="https://www.linkedin.com/in/stewart-blaquiere/" target="_blank"></a></div>
+              <div class="github"><a href="https://github.com/StewartBlaq" target="_blank"></a></div>
 
-        <span class="top-right-nav">
-          <a href="../index.html">Home</a>
-          <a href="#">Experience</a>
-        </span>
 
+            </div>
+
+            <span class="mid-nav">
+              <a href="#"><img src="../images/me.png" alt="S2 Logo" class="profile-image"></a>
+            </span>
+
+            <span class="top-right-nav">
+              <a href="../index.html">Home</a>
+              <a href="#">Experience</a>
+            </span>
+
+          </div>
       </div>
-  </div>
 
-
-<header>
-
-    <h1 class="hero">A history of climbing to the sky</h1>
-
-</header>
+      <header id="experience">
+        <div class="hero">
+          <h1>A history of climing to the sky</h1>
+          <h2>(Figuratively and literally)</h2>
+        </div>
+      </header>
 
 <main class="experiences">
-  <div>
-test1
+  <div class="row-container">
+    <div class="row-cell">
+      <img class="cut-one" width=100% src="../images/usaf.jpg">
+    </div>
+    <div id="USAF" class="row-cell">
+      <h3>United States Air Force</h3>
+      <p>For over five years I spent my time in the military acquiring valuable skills that are usefull for not just technical driven tasks, but also for day-to-day life.
+      One very important skillset I sharpened was the ability to create and maintain structure. Whether it was for strategically scheduling system-wide inspections,
+    prioritizing fault troubleshooting, or simply keeping my workspace organized--structure was key. The flightline is very fast paced, thus keeping to deadlines was
+  a necessity.I believe my ability to heed the time constraints for projects/assignments is a valuable skill that any company could benefit from.</p>
+    </div>
   </div>
-  <div>
-test2
+
+  <div class="row-container">
+    <div id="ICON" class="row-cell">
+      <h3>ICON Park</h3>
+      <p>'The Giant Wheel' at ICON Park took my "climing to the sky" claim and made it literal. For five years I spent my time climbing the 400ft structure inorder to accomplish routine inspections,
+      network & electrical system troubleshooting, plus a handful of mechanical work. This position highlights my ability to adapt and overcome challenges. Personally I am afraid of heights, but
+    I pushed past that fear so that I could get the job properly done. At the start of my employment here is when I enrolled full-time in college for my Bachelor's in Science. I was been able to
+  maintain a >3.5GPA while still carrying out my workplace duties.</p>
+    </div>
+    <div class="row-cell">
+      <img class="cut-two" width=100% src="../images/wheel.jpg">
+    </div>
   </div>
+
 </main>
 
 <footer>
-  <div class="socials">
-  <ul>
-    <li><a href="#" class="social twitter">Twitter</a></li>
-    <li><a href="#" class="social linkedin">LinkedIn</a></li>
-    <li><a href="#" class="social github">Github</a></li>
-  </ul>
-  <p class="copyright">Copyright 2021, Stewart Blaquiere</p>
-</div>
+
 </footer>
 </body>
 </html>

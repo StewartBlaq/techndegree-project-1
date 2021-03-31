@@ -9,23 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 
-  <script>
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("scroll-nav").style.top = "0";
-    } else {
-      document.getElementById("scroll-nav").style.top = "-100px";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-  </script>
 
 </head>
   <body>
 
-    <div id="scroll-nav" class="main-nav">
+    <nav class="main-nav">
         <div class="nav">
 
           <div class="top-left-nav">
@@ -42,10 +30,11 @@
           <span class="top-right-nav">
             <a href="#">Home</a>
             <a href="pages/experience.html">Experience</a>
+            <a href="pages/contact.html">Contact</a>
           </span>
 
         </div>
-    </div>
+    </nav>
 
     <header>
       <div class="hero">
@@ -58,20 +47,20 @@
 
 
     <main class="flex">
-      <div class="card background">
+      <section class="card background">
         <h3>Background</h3>
         <p>I’m an aspiring web designer who loves creating. My career path has been quite adventurous. I fixed USAF special op planes and climbed the 400ft Orlando Eye.
         I've picked up many skills along the way that I believe can be quite conducive to building functional websites.</p>
         <p>In my spare time I own and operate my photography business, "Blaq Canvas Photography". My love for eye pleaseing aesthetics has been going on for over a decade.</p>
 
-      </div>
+      </section>
 
 
-      <div class="card goals">
+      <section class="card goals">
         <h3>Goals</h3>
         <p>I want learn, grow, and perfect my web development skills. I have ~25 credit hours that have purely been in programming language based classes, including: <strong>HTML, CSS, JavaScript, Java, C</strong></p>
         <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
-      </div>
+      </section>
 
     </main>
     <footer>

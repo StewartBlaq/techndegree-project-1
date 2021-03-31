@@ -9,24 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 
-<script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("scroll-nav").style.top = "0";
-  } else {
-    document.getElementById("scroll-nav").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-</script>
 
 </head>
 
 <body>
 
-      <div id="scroll-nav" class="main-nav">
+      <nav class="main-nav">
           <div class="nav">
 
             <div class="top-left-nav">
@@ -43,10 +31,11 @@ window.onscroll = function() {
             <span class="top-right-nav">
               <a href="../index.html">Home</a>
               <a href="#">Experience</a>
+              <a href="contact.html">Contact</a>
             </span>
 
           </div>
-      </div>
+      </nav>
 
       <header id="experience">
         <div class="hero">

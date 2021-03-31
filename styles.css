@@ -30,6 +30,9 @@ a:hover {
 #experience{
   background-image:url("images/clouds.jpg");
 }
+#contact{
+  background-image: url("images/phones.png");
+}
 
 .main-nav {
   width: 100%;
@@ -124,9 +127,9 @@ a:hover {
 .cut-two{
   clip-path: polygon(0% 0%,100% 0%,100% 100%,20% 100%);
 }
-
-#scroll-nav{
-  transition: 1s;
+.contact-info{
+  text-align: center;
+  border: 2px solid black;
 }
 
 h1{

@@ -96,6 +96,8 @@ a:hover {
   color: #72e3ff;
 }
 
+
+
 h1{
 font-family: 'Cinzel', serif;
   font-size: 80px;
@@ -214,11 +216,14 @@ footer ul li {
       margin: 0 auto;
   }
 
-  header {
-    min-height: 470px;
+  .home {
+    max-width: 100%;
+    min-height: 700px;
     background-color: white;
+    background-repeat: no-repeat;
+    background-image: url("images/hero.png");
+    background-position: 50% 65%;
   }
-
   .nav {
     max-width: 1200px;
     padding: 0 20px;
